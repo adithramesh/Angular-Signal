@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif; /* Use a clean font */
+    background-color: #f0f0f0; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+.counter-app {
+    background-color: #ffffff; /* White background for the app */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Space inside the app */
+    text-align: center; /* Center text */
+}
+
+.counter-display h1 {
+    font-size: 48px; /* Large font for the count */
+    color: #333; /* Dark text color */
+}
+
+.counter-buttons {
+    margin: 20px 0; /* Space above and below the buttons */
+}
+.btn-increment {
+    background-color: #28a745; /* Green */
+    color: white; /* White text */
+}
+
+.btn-decrement {
+    background-color: #dc3545; /* Red */
+    color: white; /* White text */
+}
+
+.btn-reset {
+    background-color: #ffc107; /* Yellow */
+    color: black; /* Black text */
+}
+
+/* Common button styles */
+button {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Space inside the button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    opacity: 0.9; /* Slightly transparent on hover */
+}
+
+
+
+
+.counter-reset {
+    margin-top: 20px; /* Space above the reset button */
+}

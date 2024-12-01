@@ -1,0 +1,19 @@
+
+<div class="counter-app">
+    <div class="counter-display">
+        <span>Normal Count</span>
+        <h1>{{count()}}</h1>
+    </div>
+
+    <div class="counter-buttons">
+        <button class="btn-increment" (click)="increment()" >Plus</button>
+        <button class="btn-decrement" (click)="decrement()">Minus</button>
+    </div>
+    <div class="count-double">
+        <span>Double Count</span>
+        <h1>{{doubleCount()}}</h1>
+    </div>
+    <div class="counter-reset">
+        <button class="btn-reset" (click)="reset()">Reset</button>
+    </div>
+</div>
