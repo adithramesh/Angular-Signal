@@ -1,0 +1,67 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.app-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.counter, .todo {
+    counter-increment: app-counter;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    background-color: #fff; /* Default background */
+}
+
+.counter::before, .todo::before {
+    content: counter(app-counter) ". ";
+    font-weight: bold;
+    color: #3498db;
+    margin-right: 10px; /* Space between number and button text */
+}
+
+.counter:hover, .todo:hover {
+    background-color: #f9f9f9;
+}
+
+button {
+    display: flex; /* Use flexbox for button content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex-grow: 1; /* Allow button to grow and fill the space */
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:focus {
+    outline: none; /* Remove default focus outline */
+}
